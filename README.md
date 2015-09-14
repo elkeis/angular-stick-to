@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/elkeis/ng-stick-to.svg?branch=master)](https://travis-ci.org/elkeis/ng-stick-to)
-[![Coverage Status](https://coveralls.io/repos/elkeis/ng-stick-to/badge.svg?branch=master&service=github)](https://coveralls.io/github/elkeis/ng-stick-to?branch=master)
+[![Build Status](https://travis-ci.org/elkeis/angular-stick-to.svg?branch=master)](https://travis-ci.org/elkeis/angular-stick-to)
+[![Coverage Status](https://coveralls.io/repos/elkeis/angular-stick-to/badge.svg?branch=master&service=github)](https://coveralls.io/github/elkeis/angular-stick-to?branch=master)
 angular-stick-to components
 ======================
 
