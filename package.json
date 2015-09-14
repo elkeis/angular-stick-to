@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "karma start karma.conf.js",
-    "tdd": "karma start karma.tdd.conf.js"
+    "tdd": "karma start karma.tdd.conf.js",
+    "compile": "node concat.js"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,7 @@
     "karma-cli": "0.0.4",
     "karma-jasmine": "^0.3.5",
     "karma-jasmine-html-reporter": "^0.1.8",
-    "karma-phantomjs-launcher": "^0.1.4"
+    "karma-phantomjs-launcher": "^0.1.4",
+    "minify": "^1.4.20"
   }
 }

@@ -1,15 +1,23 @@
-/* global require*/
+/* global require, console*/
 var glob = require('glob');
 var concat = require('concat');
+var minify = require('minify');
+var fs = require('fs');
 
-// options is optional
+var RESULT_FILE_NAME = 'ngStickTo.js';
+var MIN_FILE_NAME = 'ngStickTo.min.js';
+
 glob('src/**/*.js', {nosort: true}, function(er, files) {
-  // files is an array of filenames.
-  // If the `nonull` option is set, and nothing
-  // was found, then files is ["**/*.js"]
-  // er is an error object or null.
 
-  concat(files, 'ngStickTo.js', function(error) {
-    console.log(error);
+  concat(files, RESULT_FILE_NAME, function(error) {
+    console.log(error || 'concatenated into ' + RESULT_FILE_NAME);
+    minify(RESULT_FILE_NAME, function(error, data) {
+      console.log(error || '');
+      if (!error) {
+        fs.writeFile(MIN_FILE_NAME, data, function(error) {
+          console.log(error || 'minified code assembled into ' + MIN_FILE_NAME);
+        });
+      }
+    });
   });
 });
