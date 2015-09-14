@@ -30,6 +30,7 @@
   "devDependencies": {
     "bower": "*",
     "concat": "^1.0.0",
+    "coveralls": "^2.11.4",
     "glob": "^5.0.14",
     "jasmine-core": "^2.2.0",
     "karma": "^0.12.31",
