@@ -6,6 +6,7 @@
   "scripts": {
     "pretest": "bower install",
     "test": "karma start karma.conf.js",
+    "posttest": "codeclimate-test-reporter < coverage/lcov.info",
     "tdd": "karma start karma.tdd.conf.js",
     "compile": "node concat.js"
   },
@@ -35,6 +36,7 @@
     "karma": "^0.12.31",
     "karma-chrome-launcher": "^0.1.7",
     "karma-cli": "0.0.4",
+    "karma-coverage": "^0.5.2",
     "karma-jasmine": "^0.3.5",
     "karma-jasmine-html-reporter": "^0.1.8",
     "karma-phantomjs-launcher": "^0.1.4",

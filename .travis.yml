@@ -1,2 +1,5 @@
 language: node_js
 node_js: "0.12"
+addons:
+  code_climate:
+    repo_token: aff33f...

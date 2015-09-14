@@ -51,12 +51,25 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      'src/**/*.js': 'coverage'
+    },
+
+    coverageReporter: {
+      reporters: [
+        {
+          type: 'lcovonly',
+          subdir: '.',
+          file: 'lcov.info'
+        }
+      ],
+      dir: 'coverage/',
+      file: 'lcov.info'
     },
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['dots', 'html'],
+    reporters: ['dots', 'html', 'coverage'],
 
     // web server port
     port: 9876,

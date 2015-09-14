@@ -4,6 +4,8 @@ module.exports = function(config) {
   config.set({
     singleRun: false,
     autoWatch: true,
-    browsers: ['Chrome']
+    browsers: ['Chrome'],
+    reporters: ['dots', 'html'],
+    preprocessors: {}
   });
 };
