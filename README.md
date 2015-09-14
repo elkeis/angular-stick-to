@@ -1,4 +1,5 @@
-ng-stick-to components (in development)
+[![Build Status](https://travis-ci.org/elkeis/ng-stick-to.svg?branch=master)](https://travis-ci.org/elkeis/ng-stick-to)
+ng-stick-to components (in development) 
 ======================
 
 This is a set of angular directives that allows you to add a sticky behavior on your site.
