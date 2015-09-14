@@ -3,3 +3,5 @@ node_js: "0.12"
 addons:
   code_climate:
     repo_token: aff33f...
+after_script:
+  - codeclimate-test-reporter < lcov.info

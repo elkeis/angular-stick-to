@@ -6,7 +6,6 @@
   "scripts": {
     "pretest": "bower install",
     "test": "karma start karma.conf.js",
-    "posttest": "codeclimate-test-reporter < coverage/lcov.info",
     "tdd": "karma start karma.tdd.conf.js",
     "compile": "node concat.js"
   },
