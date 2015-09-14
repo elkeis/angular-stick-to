@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "homepage": "https://github.com/elkeis/ng-stick-to",
   "description": "angular implementation of scroll to fixed functionality with limits",
+  "main": "./ngStickTo.js",
   "keywords": [
     "angular",
     "scroll",

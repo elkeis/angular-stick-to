@@ -1,6 +1,6 @@
 {
-    "strict": false,
-    "globals" : {
+    "extends": "../.jshintrc",
+    "globals": {
         "angular": true
     }
 }
