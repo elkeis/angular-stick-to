@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/elkeis/ng-stick-to.svg?branch=master)](https://travis-ci.org/elkeis/ng-stick-to)
+[![Coverage Status](https://coveralls.io/repos/elkeis/ng-stick-to/badge.svg?branch=master&service=github)](https://coveralls.io/github/elkeis/ng-stick-to?branch=master)
 ng-stick-to components (in development) 
 ======================
 
