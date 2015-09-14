@@ -1,4 +1,4 @@
-angular.module('ng-stick-to').service('AccessorFactory', [
+angular.module('angular-stick-to').service('AccessorFactory', [
   'StickyElementRegistry',
   'LimitElementRegistry',
   function(StickyElementRegistry, LimitElementRegistry) {

@@ -2,7 +2,7 @@ describe('Element Factory', function() {
 
   var ElementFactory;
   beforeEach(function() {
-    module('ng-stick-to', function($provide) {
+    module('angular-stick-to', function($provide) {
       $provide.value('AccessorFactory', mock.createAccessorFactoryMock());
     });
     inject(function(_ElementFactory_) {

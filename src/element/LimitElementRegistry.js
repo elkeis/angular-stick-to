@@ -1,1 +1,1 @@
-angular.module('ng-stick-to').value('LimitElementRegistry', {});
+angular.module('angular-stick-to').value('LimitElementRegistry', {});

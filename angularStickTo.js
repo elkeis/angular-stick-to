@@ -1,5 +1,6 @@
-angular.module('ng-stick-to', []);
-angular.module('ng-stick-to').directive('ngStickTo', [
+angular.module('angular-stick-to', []);
+/* jshint maxstatements:15*/
+angular.module('angular-stick-to').directive('angularStickTo', [
   'StickyElementRegistry',
   'ElementFactory',
   '$window',
@@ -9,7 +10,7 @@ angular.module('ng-stick-to').directive('ngStickTo', [
     $window, updateElement, postDigest) {
     return function(scope, el, attrs) {
       var options = {
-        primaryLimit: attrs.ngStickTo,
+        primaryLimit: attrs.angularStickTo,
         secondaryLimit: attrs.limit,
         element: el
       };
@@ -78,22 +79,22 @@ angular.module('ng-stick-to').directive('ngStickTo', [
     };
   }
 ]);
-angular.module('ng-stick-to').directive('ngStickToLimit', [
+angular.module('angular-stick-to').directive('angularStickToLimit', [
   'LimitElementRegistry',
   'ElementFactory',
   function(LimitElementRegistry, ElementFactory) {
     return function(scope, el, attrs) {
       var simpleElement = ElementFactory.createSimpleElement(el);
-      if (attrs.ngStickToLimit) {
-        LimitElementRegistry[attrs.ngStickToLimit] = simpleElement;
+      if (attrs.angularStickToLimit) {
+        LimitElementRegistry[attrs.angularStickToLimit] = simpleElement;
         scope.$on('$destroy', function() {
-          LimitElementRegistry[attrs.ngStickToLimit] = undefined;
+          LimitElementRegistry[attrs.angularStickToLimit] = undefined;
         });
       }
     };
   }
 ]);
-angular.module('ng-stick-to').service('AccessorFactory', [
+angular.module('angular-stick-to').service('AccessorFactory', [
   'StickyElementRegistry',
   'LimitElementRegistry',
   function(StickyElementRegistry, LimitElementRegistry) {
@@ -126,7 +127,7 @@ angular.module('ng-stick-to').service('AccessorFactory', [
     }
   }
 ]);
-angular.module('ng-stick-to').service('ElementFactory', [
+angular.module('angular-stick-to').service('ElementFactory', [
   'AccessorFactory',
   function(AccessorFactory) {
     /**
@@ -210,9 +211,9 @@ angular.module('ng-stick-to').service('ElementFactory', [
     };
   }
 ]);
-angular.module('ng-stick-to').value('LimitElementRegistry', {});
-angular.module('ng-stick-to').value('StickyElementRegistry', {});
-angular.module('ng-stick-to').factory('postDigest', [
+angular.module('angular-stick-to').value('LimitElementRegistry', {});
+angular.module('angular-stick-to').value('StickyElementRegistry', {});
+angular.module('angular-stick-to').factory('postDigest', [
   '$rootScope',
   '$timeout',
   function($rootScope, $timeout) {
@@ -238,7 +239,7 @@ angular.module('ng-stick-to').factory('postDigest', [
     };
   }
 ]);
-angular.module('ng-stick-to').factory('updateElement', [
+angular.module('angular-stick-to').factory('updateElement', [
   function() {
     return function updateElement(element) {
       var primaryLimitOverflow =

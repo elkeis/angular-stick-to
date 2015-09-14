@@ -1,5 +1,5 @@
 /* jshint maxstatements:15*/
-angular.module('ng-stick-to').directive('ngStickTo', [
+angular.module('angular-stick-to').directive('angularStickTo', [
   'StickyElementRegistry',
   'ElementFactory',
   '$window',
@@ -9,7 +9,7 @@ angular.module('ng-stick-to').directive('ngStickTo', [
     $window, updateElement, postDigest) {
     return function(scope, el, attrs) {
       var options = {
-        primaryLimit: attrs.ngStickTo,
+        primaryLimit: attrs.angularStickTo,
         secondaryLimit: attrs.limit,
         element: el
       };

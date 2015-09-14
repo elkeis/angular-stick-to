@@ -4,8 +4,8 @@ var concat = require('concat');
 var minify = require('minify');
 var fs = require('fs');
 
-var RESULT_FILE_NAME = 'ngStickTo.js';
-var MIN_FILE_NAME = 'ngStickTo.min.js';
+var RESULT_FILE_NAME = 'angularStickTo.js';
+var MIN_FILE_NAME = 'angularStickTo.min.js';
 
 glob('src/**/*.js', {nosort: true}, function(er, files) {
 

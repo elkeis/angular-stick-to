@@ -27,7 +27,7 @@ module.exports = function(config) {
         pattern: 'bower_components/angular-mocks/angular-mocks.js',
         watched: false
       },{
-        pattern: 'src/ngStickTo.js',
+        pattern: 'src/angularStickTo.js',
         included: true
       },{
         pattern: 'src/**/*.js',

@@ -1,9 +1,9 @@
 {
-  "name": "ng-stick-to",
+  "name": "angular-stick-to",
   "version": "0.0.1",
-  "homepage": "https://github.com/elkeis/ng-stick-to",
+  "homepage": "https://github.com/elkeis/angular-stick-to",
   "description": "angular implementation of scroll to fixed functionality with limits",
-  "main": "./ngStickTo.js",
+  "main": "./angularStickTo.js",
   "keywords": [
     "angular",
     "scroll",

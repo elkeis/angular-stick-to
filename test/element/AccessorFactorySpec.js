@@ -3,7 +3,7 @@ describe('Accessor service', function() {
   var createSimpleElement;
   beforeEach(function() {
     createSimpleElement = mock.createSimpleElementMock;
-    module('ng-stick-to', function($provide) {
+    module('angular-stick-to', function($provide) {
       $provide.value('StickyElementRegistry', {});
       $provide.value('LimitElementRegistry', {});
     });

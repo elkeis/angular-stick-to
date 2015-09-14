@@ -1,1 +1,1 @@
-angular.module('ng-stick-to').value('StickyElementRegistry', {});
+angular.module('angular-stick-to').value('StickyElementRegistry', {});

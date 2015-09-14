@@ -1,4 +1,4 @@
-angular.module('ng-stick-to').factory('postDigest', [
+angular.module('angular-stick-to').factory('postDigest', [
   '$rootScope',
   '$timeout',
   function($rootScope, $timeout) {

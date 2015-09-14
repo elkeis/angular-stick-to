@@ -1,4 +1,4 @@
-angular.module('ng-stick-to').factory('updateElement', [
+angular.module('angular-stick-to').factory('updateElement', [
   function() {
     return function updateElement(element) {
       var primaryLimitOverflow =

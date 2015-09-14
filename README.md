@@ -1,18 +1,18 @@
 [![Build Status](https://travis-ci.org/elkeis/ng-stick-to.svg?branch=master)](https://travis-ci.org/elkeis/ng-stick-to)
 [![Coverage Status](https://coveralls.io/repos/elkeis/ng-stick-to/badge.svg?branch=master&service=github)](https://coveralls.io/github/elkeis/ng-stick-to?branch=master)
-ng-stick-to components (in development) 
+angular-stick-to components
 ======================
 
 This is a set of angular directives that allows you to add a sticky behavior on your site.
 
-## ng-stick-to directive
+## angular-stick-to directive
 
 The main guy that implements sticky behavior for given element.
 
 ### Usage
 
 ``` html
-<div ng-stick-to="0">
+<div angular-stick-to="0">
   <!--Your awesome content here  -->
 </div>
 ```
@@ -22,36 +22,36 @@ This code will make your element _"fixed"_ when it's top offset relatively to vi
 
   Name                  | Type            | Description
  -----------------------|-----------------|----------------------
-  ng-stick-to(required) | number          | Top offset relatively to viewport top. Limit, after that element becomes sticky.
+  angular-stick-to(required) | number          | Top offset relatively to viewport top. Limit, after that element becomes sticky.
                         | string          | Name of the `another sticky element`. It's bottom line will become the limit.
   name                  | string          | Name of current element
   limit                 | string          | Name of the `limit` element
 
-## ng-stick-to-limit
+## angular-stick-to-limit
 
 Limit element for sticky element.
 
 ### Usage
 
 ``` html
-<div ng-stick-to="0">
+<div angular-stick-to="0">
   <!--  Your awesome content here -->
 </div>
 <!--  More awesome content -->
-<div ng-stick-to-limit="your-sticky-limit-name">
+<div angular-stick-to-limit="your-sticky-limit-name">
   <!-- ... -->
 </div>
 ```
 Sticky element will become static if limit is reached.
 
-## ng-stick-to-breakpoint
+## angular-stick-to-breakpoint
 
 Turns off the sticky behavior for small resolutions
 
 ### Usage
 
 ``` html
-<div ng-stick-to="0" ng-stick-to-breakpoint="768">
+<div angular-stick-to="0" angular-stick-to-breakpoint="768">
   <!-- Your awesome content here -->
 </div>
 ```
@@ -113,13 +113,13 @@ In this case our element should become sticky, because it's top edge is above it
 Looks unbelievable, but it can happens on bad designed markups. like
 ```html
 <div class="column1">
-  <div ng-stick-to="0" limit="bad_guy">
+  <div angular-stick-to="0" limit="bad_guy">
     <!-- content -->
   </div>
 </div>
 <div class="column2">
   <!-- content -->
-  <div ng-stick-to-limit="bad_guy">
+  <div angular-stick-to-limit="bad_guy">
 
   </div>
 </div>

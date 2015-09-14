@@ -1,7 +1,7 @@
 describe('update element Function', function() {
   var updateElement;
   beforeEach(function() {
-    module('ng-stick-to');
+    module('angular-stick-to');
     inject(function(_updateElement_) {
       updateElement = _updateElement_;
     });

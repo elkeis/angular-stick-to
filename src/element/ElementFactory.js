@@ -1,4 +1,4 @@
-angular.module('ng-stick-to').service('ElementFactory', [
+angular.module('angular-stick-to').service('ElementFactory', [
   'AccessorFactory',
   function(AccessorFactory) {
     /**

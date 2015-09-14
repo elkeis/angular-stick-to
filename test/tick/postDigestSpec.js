@@ -1,7 +1,7 @@
 describe('Post digest', function() {
 
   beforeEach(function() {
-    module('ng-stick-to');
+    module('angular-stick-to');
   });
 
   var PostDigest;
