@@ -6,6 +6,7 @@
   "scripts": {
     "pretest": "bower install",
     "test": "karma start karma.conf.js",
+    "posttest": "cat coverage/lcov.info | node node_modules/coveralls/bin/coveralls.js",
     "tdd": "karma start karma.tdd.conf.js",
     "compile": "node concat.js"
   },
