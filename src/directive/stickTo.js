@@ -14,7 +14,7 @@ angular.module('ng-stick-to').directive('ngStickTo', [
       };
 
       var breakpoint = isNaN(parseInt(attrs.breakpoint)) ?
-        Infinity : parseInt(attrs.breakpoint);
+        0 : parseInt(attrs.breakpoint);
 
       var stickyElement = ElementFactory.createStickyElement(options);
       if (attrs.name) {
