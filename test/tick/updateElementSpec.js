@@ -19,7 +19,7 @@ describe('update element Function', function() {
     });
 
     [0, 5, 65].forEach(function(offset) {
-      describe(`when has offset ${offset}`, function() {
+      describe('when has offset ' + offset, function() {
         beforeEach(function() {
           element.setSyntheticOffset(offset);
           element.setSyntheticOffset.calls.reset();
@@ -46,7 +46,7 @@ describe('update element Function', function() {
     });
 
     [0, 5, 15, 65, 125].forEach(function(offset) {
-      describe(`when has offset ${offset}`, function() {
+      describe('when has offset ' + offset, function() {
         beforeEach(function() {
           element.setSyntheticOffset(offset);
           element.setSyntheticOffset.calls.reset();
@@ -73,7 +73,7 @@ describe('update element Function', function() {
     });
 
     [0, 5, 15, 65, 125].forEach(function(offset) {
-      describe(`when has offset ${offset}`, function() {
+      describe('when has offset ' + offset, function() {
         beforeEach(function() {
           element.setSyntheticOffset(offset);
           element.setSyntheticOffset.calls.reset();
@@ -101,7 +101,7 @@ describe('update element Function', function() {
       expectedOffset = element._secondaryLimit - element._bottom;
     });
     [0, 3, 5, 15, 65, 125].forEach(function(offset) {
-      describe(`when has offset ${offset}`, function() {
+      describe('when has offset ' + offset, function() {
         beforeEach(function() {
           element.setSyntheticOffset(offset);
           element.setSyntheticOffset.calls.reset();
@@ -129,7 +129,7 @@ describe('update element Function', function() {
     });
 
     [0, 3, 5, 15, 65, 125].forEach(function(offset) {
-      describe(`when has offset ${offset}`, function() {
+      describe('when has offset ' + offset, function() {
         beforeEach(function() {
           element.setSyntheticOffset(offset);
           element.setSyntheticOffset.calls.reset();

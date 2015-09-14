@@ -4,6 +4,7 @@
   "description": "angular implementation of scroll to fixed with limits  ",
   "main": "index.js",
   "scripts": {
+    "pretest": "bower install",
     "test": "karma start karma.conf.js",
     "tdd": "karma start karma.tdd.conf.js",
     "compile": "node concat.js"

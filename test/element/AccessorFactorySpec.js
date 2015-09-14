@@ -13,8 +13,8 @@ describe('Accessor service', function() {
   });
 
   ['PrimaryLimit', 'SecondaryLimit'].forEach(function(item) {
-    it(`should has "create${item}Accessor()" method`, function() {
-      expect(AccessorFactory[`create${item}Accessor`])
+    it('should has "create' + item + 'Accessor()" method', function() {
+      expect(AccessorFactory['create' + item + 'Accessor'])
         .toEqual(jasmine.any(Function));
     });
   });
@@ -147,7 +147,7 @@ describe('Accessor service', function() {
     expectedAnswer, desc) {
 
     describe('When result function is called', function() {
-      it(`should return ${expectedAnswer}` + (desc ? ` — ${desc}` : '') ,
+      it('should return ' + expectedAnswer  + (desc ? (' — ' + desc) : '') ,
       function() {
         expect(resultFnGetter()()).toEqual(expectedAnswer);
       });

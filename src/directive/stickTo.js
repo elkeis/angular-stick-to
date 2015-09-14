@@ -1,3 +1,4 @@
+/* jshint maxstatements:15*/
 angular.module('ng-stick-to').directive('ngStickTo', [
   'StickyElementRegistry',
   'ElementFactory',
