@@ -44,7 +44,7 @@ angular.module('ng-stick-to').service('ElementFactory', [
     StickyElement.prototype = Object.create(SimpleElement.prototype, {
       setSyntheticOffset: {
         value: function(offset) {
-          var translateY = 'translateY(' + offset + 'px)';
+          var translateY = 'translate(0px,' + offset + 'px)';
           this.jqElement.css({
             '-ms-transform': translateY, /* IE 9 */
             '-webkit-transform': translateY, /* Safari */

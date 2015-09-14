@@ -102,11 +102,11 @@ describe('Element Factory', function() {
             beforeEach(function() {
               StickyElement.setSyntheticOffset(offset);
             });
-            it('should apply translateY: ${offset} on element', function() {
+            it('should apply translate2d: ${offset} on element', function() {
               expect(StickyElement.jqElement.css).toHaveBeenCalledWith({
-                '-ms-transform': `translateY(${offset}px)`, /* IE 9 */
-                '-webkit-transform': `translateY(${offset}px)`, /* Safari */
-                'transform': `translateY(${offset}px)`
+                '-ms-transform': `translate(0px,${offset}px)`, /* IE 9 */
+                '-webkit-transform': `translate(0px,${offset}px)`, /* Safari */
+                'transform': `translate(0px,${offset}px)`
               });
             });
 
