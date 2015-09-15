@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Angular-stick-to by elkeis</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/elkeis/angular-stick-to">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/elkeis/angular-stick-to/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/elkeis/angular-stick-to/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Angular-stick-to</h1>
+          <p>angular-stick-to components</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/elkeis">elkeis</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <p><a href="https://travis-ci.org/elkeis/angular-stick-to"><img src="https://travis-ci.org/elkeis/angular-stick-to.svg?branch=master" alt="Build Status"></a>
+<a href="https://coveralls.io/github/elkeis/angular-stick-to?branch=master"><img src="https://coveralls.io/repos/elkeis/angular-stick-to/badge.svg?branch=master&amp;service=github" alt="Coverage Status"></a></p>
+
+<h1>
+<a id="angular-stick-to-components" class="anchor" href="#angular-stick-to-components" aria-hidden="true"><span class="octicon octicon-link"></span></a>angular-stick-to components</h1>
+
+<p>This is a set of angular directives that allows you to add a sticky behavior on your site.</p>
+
+<h2>
+<a id="angular-stick-to-directive" class="anchor" href="#angular-stick-to-directive" aria-hidden="true"><span class="octicon octicon-link"></span></a>angular-stick-to directive</h2>
+
+<p>The main guy that implements sticky behavior for given element.</p>
+
+<h3>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h3>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">angular-stick-to</span>=<span class="pl-s"><span class="pl-pds">"</span>0<span class="pl-pds">"</span></span>&gt;
+  <span class="pl-c">&lt;!--Your awesome content here  --&gt;</span>
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p>This code will make your element <em>"fixed"</em> when it's top offset relatively to viewport top will be less or equal than <code>0</code>;</p>
+
+<h3>
+<a id="attributes" class="anchor" href="#attributes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Attributes</h3>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>angular-stick-to(required)</td>
+<td>number</td>
+<td>Top offset relatively to viewport top. Limit, after that element becomes sticky.</td>
+</tr>
+<tr>
+<td></td>
+<td>string</td>
+<td>Name of the <code>another sticky element</code>. It's bottom line will become the limit.</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Name of current element</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>string</td>
+<td>Name of the <code>limit</code> element</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="angular-stick-to-limit" class="anchor" href="#angular-stick-to-limit" aria-hidden="true"><span class="octicon octicon-link"></span></a>angular-stick-to-limit</h2>
+
+<p>Limit element for sticky element.</p>
+
+<h3>
+<a id="usage-1" class="anchor" href="#usage-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h3>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">angular-stick-to</span>=<span class="pl-s"><span class="pl-pds">"</span>0<span class="pl-pds">"</span></span>&gt;
+  <span class="pl-c">&lt;!--  Your awesome content here --&gt;</span>
+&lt;/<span class="pl-ent">div</span>&gt;
+<span class="pl-c">&lt;!--  More awesome content --&gt;</span>
+&lt;<span class="pl-ent">div</span> <span class="pl-e">angular-stick-to-limit</span>=<span class="pl-s"><span class="pl-pds">"</span>your-sticky-limit-name<span class="pl-pds">"</span></span>&gt;
+  <span class="pl-c">&lt;!-- ... --&gt;</span>
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p>Sticky element will become static if limit is reached.</p>
+
+<h2>
+<a id="angular-stick-to-breakpoint" class="anchor" href="#angular-stick-to-breakpoint" aria-hidden="true"><span class="octicon octicon-link"></span></a>angular-stick-to-breakpoint</h2>
+
+<p>Turns off the sticky behavior for small resolutions</p>
+
+<h3>
+<a id="usage-2" class="anchor" href="#usage-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h3>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">angular-stick-to</span>=<span class="pl-s"><span class="pl-pds">"</span>0<span class="pl-pds">"</span></span> <span class="pl-e">angular-stick-to-breakpoint</span>=<span class="pl-s"><span class="pl-pds">"</span>768<span class="pl-pds">"</span></span>&gt;
+  <span class="pl-c">&lt;!-- Your awesome content here --&gt;</span>
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p>768 is screen width in pixels</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-67648812-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
