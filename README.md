@@ -26,6 +26,7 @@ This code will make your element _"fixed"_ when it's top offset relatively to vi
                         | string          | Name of the `another sticky element`. It's bottom line will become the limit.
   name                  | string          | Name of current element
   limit                 | string          | Name of the `limit` element
+  breakpoint            | number          | minimal width of the screen when directive will apply sticky behaviour
 
 ## angular-stick-to-limit
 
@@ -43,19 +44,6 @@ Limit element for sticky element.
 </div>
 ```
 Sticky element will become static if limit is reached.
-
-## angular-stick-to-breakpoint
-
-Turns off the sticky behavior for small resolutions
-
-### Usage
-
-``` html
-<div angular-stick-to="0" angular-stick-to-breakpoint="768">
-  <!-- Your awesome content here -->
-</div>
-```
-768 is screen width in pixels
 
 Technical Details
 ==================
