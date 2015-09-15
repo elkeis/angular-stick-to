@@ -653,10 +653,6 @@ dt {
 header {
   padding: 25px 20px 40px 20px;
   margin: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
   text-align: center;
   background: url(../images/background.png) #4276b6;
   -moz-box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.75);
@@ -890,7 +886,7 @@ footer {
     border: 1px solid #e5e5e5;
     border-width: 1px 0;
     padding: 20px auto;
-    margin: 190px auto 20px;
+    margin: 0px auto 20px;
     max-width: 600px;
   }
 
@@ -931,12 +927,11 @@ footer {
     float: left;
     display: inline-block;
     margin-left: 0px;
-    position: fixed;
+    position: relative;
     left: 20px;
   }
 
   section {
-    margin-top: 130px;
     margin-bottom: 0px;
     width: auto;
   }
