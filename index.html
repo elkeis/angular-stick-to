@@ -8,20 +8,22 @@
     <link rel="stylesheet" href="stylesheets/github-dark.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="javascripts/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="angularStickTo.js"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
   </head>
-  <body>
+  <body ng-app="angular-stick-to">
 
       <header>
         <h1>Angular-stick-to</h1>
         <p>angular-stick-to components</p>
       </header>
 
-      <div id="banner">
+      <div id="banner" angular-stick-to="0" name="banner">
         <span id="logo"></span>
 
         <a href="https://github.com/elkeis/angular-stick-to" class="button fork"><strong>View On GitHub</strong></a>
@@ -35,7 +37,7 @@
       </div><!-- end banner -->
 
     <div class="wrapper">
-      <nav>
+      <nav angular-stick-to="banner" breakpoint="1060">
         <ul></ul>
       </nav>
       <section>
